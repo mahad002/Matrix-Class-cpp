@@ -28,10 +28,12 @@ class Matrix{
 
       Matrix& operator()(int A, int B);//returns a new matrix of size A x B
        ̃Matrix();
-      };
-      ostream& operator<<(ostream&, const Matrix &); //outputs the matrix
-      istream& operator>>(istream&, const Matrix &); //inputs the matrix
-      int main(){
+};
+
+ostream& operator<<(ostream&, const Matrix &); //outputs the matrix
+istream& operator>>(istream&, const Matrix &); //inputs the matrix
+      
+int main(){
       //write test code
       Matrix M1(3,3), M2(3,3), M3(3,3); //declare multiple 3X3 matrices
       Matrix M4 = M1 – M2 + M3; //should be able to write expressions of this form
